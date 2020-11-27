@@ -156,7 +156,8 @@ nnoremap <silent> <leader>z :Goyo<cr>
 let g:ale_linters = {
 \   'javascript': ['jshint'],
 \   'python': ['flake8'],
-\   'go': ['go', 'golint', 'errcheck']
+\   'go': ['go', 'golint', 'errcheck'],
+\	'cpp': ['ccls', 'clang', 'clangd', 'cppcheck', 'cpplint', 'cquery', 'flawfinder', 'gcc']
 \}
 
 nmap <silent> <leader>a <Plug>(ale_next_wrap)
@@ -166,7 +167,7 @@ let g:ale_set_highlights = 0
 
 " Only run linting when saving the file
 let g:ale_lint_on_text_changed = 'never'
-let g:ale_lint_on_enter = 0
+let g:ale_lint_on_enter = 1
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
