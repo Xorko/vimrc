@@ -157,7 +157,8 @@ let g:ale_linters = {
 \   'javascript': ['jshint'],
 \   'python': ['flake8'],
 \   'go': ['go', 'golint', 'errcheck'],
-\	'cpp': ['ccls', 'clang', 'clangd', 'cppcheck', 'cpplint', 'cquery', 'flawfinder', 'gcc']
+\	'c': ['ccls', 'clang', 'cppcheck', 'cquery', 'flawfinder', 'gcc'],
+\	'cpp': ['ccls', 'clang','cppcheck', 'cpplint', 'cquery', 'flawfinder', 'gcc']
 \}
 
 nmap <silent> <leader>a <Plug>(ale_next_wrap)
